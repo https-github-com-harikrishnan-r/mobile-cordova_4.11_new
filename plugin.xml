@@ -41,6 +41,8 @@
             </config>
             <pods use-frameworks="true">
                 <pod name="Jumio" spec="4.11.0"/>
+             <pod name="Jumio/Datadog" spec="none"/>
+		    
             </pods>
         </podspec>
     </platform>
