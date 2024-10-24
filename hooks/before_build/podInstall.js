@@ -3,8 +3,8 @@ var child_process = require('child_process');
 
 module.exports = function (ctx) {
     var pathiOS = path.join(ctx.opts.projectRoot,"platforms","ios");
-    
-    var child = child_process.execSync('pod install', {cwd:pathiOS});
+     var child = child_process.execSync('pod repo update', {cwd:pathiOS});
+    var child1 = child_process.execSync('pod install', {cwd:pathiOS});
     console.log("Process finished.");
     if(child.error) {
         console.log("ERROR: ",child.error);
